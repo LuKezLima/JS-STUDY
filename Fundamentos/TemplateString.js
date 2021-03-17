@@ -16,3 +16,4 @@ console.log(`1+1 =  ${1 + 1}`);
 const Up = texto => texto.toUppercase()
 const text = Up("Cuidado")
 console.log(text)
+
