@@ -65,3 +65,25 @@ const {
 
 console.log(ano3, a, ano1)
 
+
+
+const violao = {
+    modelo: 'fender',
+    corda: 'aço',
+    corpo: 'madeira canadense'
+}
+
+const {
+    modelo,
+    corda
+} = violao
+console.log(modelo, corda)
+
+
+
+const {
+    modelo: Mo,
+    corpo: co
+} = violao
+
+console.log('O modelo do seu violão é o', Mo, 'e o corpo é feito de', co)
