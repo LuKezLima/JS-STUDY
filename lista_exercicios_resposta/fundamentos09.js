@@ -7,13 +7,15 @@ function classificaAluno(nota) {
     }
 }
 
-function arredondar (nota) {
+function arredondar(nota) {
     if (nota % 5 > 2) {
         return nota + (5 - (nota % 5))
     } else {
         return nota
     }
 }
+
+console.log(23 % 6)
 
 classificaAluno(100)
 classificaAluno(30)
