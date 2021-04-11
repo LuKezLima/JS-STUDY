@@ -10,6 +10,7 @@ console.log(aprovado[0]) //INDEX 0 É O PRIMEIRO ELEMENTO
 console.log(aprovado[1])
 console.log(aprovado[2])
 console.log(aprovado[3])
+console.log(aprovado[2])
 
 
 aprovado[3] = 'Paulo' // ADICIONANDO O INDEX 3 AO ARRAY
