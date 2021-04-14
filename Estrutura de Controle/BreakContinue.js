@@ -19,6 +19,6 @@ for (y in numero) {
 externo: for (a in numero) {
     for (b in numero) {
         if (a == 2 && b == 3) break externo
-        console.log(a, b)
+        console.log(b,a)
     }
 }
