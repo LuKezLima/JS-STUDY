@@ -6,7 +6,7 @@ const produtos = [
     },
     {
         nome: "Ipad Pro",
-        preco: 4199,
+        preco: 4239,
         fragil: true
     },
     {
