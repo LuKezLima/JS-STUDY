@@ -5,7 +5,7 @@ aprovados.forEach(function (nome, indice) { // NOME E DPS O INDICE
 })
 
 
-aprovados.forEach((nome) => console.log(nome))
+aprovados.forEach((nome,indice) => console.log(nome, indice))
 
 const exibirAprovados = aprovado => console.log((aprovado))
 
