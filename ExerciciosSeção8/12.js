@@ -5,5 +5,11 @@ function removeProperty(obj, item) {
     return console.log(objeto)
 }
 
+const pessoa = {
+    nome: "Lucas",
+    pai: "Edson",
+    mãe: "Maria"
+}
 
-removeProperty({a:2, bala:5, preco: 12}, "preco")
+
+removeProperty(pessoa, "pai")
