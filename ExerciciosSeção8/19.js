@@ -1,6 +1,6 @@
 
-function calculateMedia(array){
-    const lenght = array.lenght
+function calculateAvarage(array){
+    const lenght = array.length
     let sum = 0
     let result = 0
     array.map(element => {
@@ -9,8 +9,8 @@ function calculateMedia(array){
     });
         result = (sum/lenght)
         return console.log(result)
+
 }
 
-
 const numbers = [2,3,5,2,10]
-calculateMedia(numbers)
+calculateAvarage(numbers)
