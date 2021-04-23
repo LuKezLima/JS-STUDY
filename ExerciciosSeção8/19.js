@@ -12,5 +12,5 @@ function calculateAvarage(array){
 
 }
 
-const numbers = [2,3,5,2,10]
+const numbers = [10,10,10]
 calculateAvarage(numbers)
