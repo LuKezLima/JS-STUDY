@@ -1,0 +1,57 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+
+
+    <style>
+        body{
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2px 6px 20%;
+            gap: 2px;
+            grid-template-areas: 'header' 'header' 'container1' 'container2' 'footer' 'footer'
+        }
+
+        #header{
+            grid-area: header;
+        }
+
+        #container1{
+            grid-area: container1;
+
+        }
+        #container2{
+            grid-area: container2;
+        }
+        #footer{
+            grid-area: footer;
+        }
+
+
+
+        div{
+           background-color: rgb(141, 141, 250);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.6px solid black;
+        }
+
+        div:nth-child(even){
+            background-color: rgb(211, 211, 35);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">1 - HEADER</div>
+    <div id="container1">2 - CONTAINER</div>
+    <div id="container2">3 - CONTAINER</div>
+    <div id="footer">4 - FOOTER</div>
+</body>
+</html>
