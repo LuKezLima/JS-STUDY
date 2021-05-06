@@ -10,14 +10,42 @@
 <body class='conteudo exercicio'>
     <div>
         <label for="compras">Compras</label>
-        <ul id="compras" destino='escritório' data-urgencia="5">
+        <ul id="compras" destino='escritório' data-urgencia="5" data-balbla ="opa">
             <li>Café</li>
             <li>Água</li>
             <li>Copo Descartável</li>
         </ul>
     </div>
     <script>
-        // ...
+       const lista = document.querySelector('div ul[destino="escritório"]')
+            console.log('Elemento Ul' );
+            console.log('childNodes', lista.childNodes);
+            console.log('Get attribute', lista.getAttribute('destino'));
+            console.log('hasAttribute', lista.hasAttribute("destino"));
+            lista.setAttribute('destino', 'empresa') //ALTERAR OU ADICIONAR UM ATRIBUTO
+            lista.setAttribute('status', 'aberto')
+            lista.removeAttribute('destino')
+
+            console.log(lista.dataset);
+            console.log(lista.dataset.urgencia);
+
+            console.log(lista.getAttribute('data-urgencia'));
+
+            //CUIDADO
+
+            const label = document.querySelector('label')
+            console.log(label.for); // errado
+
+            console.log(label.htmlFor);
+        
+            
+            
+            
+            
+
+            
+            
+            
     </script>
 </body>
 

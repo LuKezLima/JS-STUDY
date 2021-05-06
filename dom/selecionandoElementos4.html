@@ -22,7 +22,37 @@
         <p>Fim</p>
     </div>
     <script>
-        // ...
+        function log(){
+            console.log(this)
+        }
+
+        HTMLCollection.prototype.log = log
+        NodeList.prototype.log = log
+        Node.prototype.log = log
+        HTMLElement.prototype.log = log
+
+        const lista = document.querySelector('div ul')
+        lista.parentNode.log() // parentNodem ACESSA O ELEMENTO PAI --  NO CASO FOI A DIV
+        
+        lista.childNodes.log() // CHILDNODES ACESSA O ELEMENTO FILHO E VAI TRAZER OS ESPAÇOS ENTRE UL E LI A MENOS QUE ELE N EXISTA NO HTML
+
+        const primeiro  = lista.firstChild
+        primeiro.log()
+        primeiro.nextSibling.log() // PEGA O IRMAO DO PRIMEIRO ELEMENTO
+
+        const ultimo = lista.lastChild
+        ultimo.log()
+        ultimo.previousSibling.log()
+
+
+        lista.children.log() // VEM DENTRO DE UM HTMLCOLLECTION
+
+        lista.firstElementChild.log() // TRAZ O PRIMEIRO ELEMENTO SEM OS TEXT
+        lista.lastElementChild.log()
+
+        lista.parentNode.previousElementSibling.log()
+        lista.parentNode.nextElementSibling.log() // vai pegando o anterior
+        
     </script>
 </body>
 
