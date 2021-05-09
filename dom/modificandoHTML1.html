@@ -9,7 +9,46 @@
 
 <body class='conteudo exercicio'>
     <script>
-        // ...
+        const body  = document.querySelector('body')
+
+        const div1 = document.createElement('div')
+        div1.classList.add('destaque')
+        div1.innerHTML = 'Primeiro'
+
+        const div2 = document.createElement('div')
+        div2.setAttribute('wm-atributo', 'valor')
+        div2.innerHTML ='Segundo'
+
+
+        const h12 = document.createElement('h1')
+        h12.innerHTML = 'Terceiro'
+        h12.style.color = 'red'
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Terceiro'
+        const div3 = document.createElement('div')
+        div3.appendChild(h12)
+        div3.appendChild(p)
+       
+
+
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+
+        const texto = document.createTextNode("Antesss...")
+        div3.insertBefore(texto,div3.childNodes[0])
+
+        const div4 = div3.cloneNode(true) // TRUE COPIA OS FILHOS TAMBEM E FALSE SÓ O ELEMENTO EM SI
+
+        body.appendChild(div4)
+        body.removeChild(div3)
+
+       
+        
+        
+        
     </script>
 </body>
 
