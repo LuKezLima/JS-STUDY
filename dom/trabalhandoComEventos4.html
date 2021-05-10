@@ -31,6 +31,19 @@
         <button wm-submit>Pesquisar</button>
     </form>
     <script>
-        // ...
+        const btn = document.querySelector('[wm-submit]')
+
+
+        function tomalá(e) {  
+            e.preventDefault()
+            const form = e.target.parentNode
+            const formData = new FormData(form)
+            formData.append('Ajax', true)
+            console.log(formData.get('q'));
+            
+        }
+     
+        
+        btn.addEventListener('click', tomalá() )
     </script>
 </body>
