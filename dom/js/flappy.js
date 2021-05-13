@@ -73,3 +73,6 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
     }
 }
 
+console.log('oi');
+
+
