@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #ffe259, #ffa751);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 70vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 7px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.4rem;
+}
+
+#logo{
+    margin-top: 1rem;
+    width: 25%;
+    height: auto;
+    background-size: cover;
+}
+
+
+.search{
+    width: 80%;
+    padding: 1rem;
+    margin-top: 1.2rem;
+   
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search-input{
+    width: 80%;
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid #213a8a;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px 2px;
+}
+
+
+.search-input::placeholder{
+    color: #0d2268;
+}
+.search-button{
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #0d2268;
+    background-color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    text-align: center;
+    color: #0d2268;
+    text-decoration:solid;
+    border-radius: 5px;
+    font-weight: 500;
+    
+}
+
+.search-button:hover{
+    background-color: #0d2268;
+    color: #ffffff;
+    transition: 0.2s ease-in;
+    font-weight: 500;
+}
+
+.pokemon{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+#imgbox{
+    display: flex;
+    flex-direction: column;
+  
+     align-items: center;
+  
+}
+
+#pokeimg{
+    margin-top: 3rem;
+    width: 40%;
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.name{
+    color:  #353535;
+    text-shadow: 1px 1px rgb(90, 90, 90);
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+
+#type{
+    margin-top: 3rem;
+    color: #353535;
+    text-shadow: 1px 1px rgb(90, 90, 90);
+    text-transform: capitalize;
+}
+
+#id{
+    margin-top: 1rem;
+    color: #353535;
+    text-shadow: 1px 1px rgb(90, 90, 90);
+}
+
+#peso{
+    margin-top: 3rem;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+     align-items: left;
+   
+}
+
+#skil{
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    text-align: left;
+
+   
+}
